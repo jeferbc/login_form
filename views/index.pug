@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content
+  a(href='/logout') Salir
+  table
+    thead
+      tr
+        th Name
+        th Email
+    tbody
+      each user in users
+        tr
+          td= user.name
+          td= user.email
